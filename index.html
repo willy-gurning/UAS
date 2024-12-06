@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="profile.jpg" alt="Foto Saya" class="profile-photo" width="200" height="200" style="border-radius: 50%; object-fit: cover;">
+            <div class="profile-name">
+                <h2>Willy Gurning</h2>
+            </div>
+        </div>
+        <ul class="link">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>          
+    </header>
+    <main>
+        <article id="home">
+            <h1>Elden Ring – Perjalanan Epik di Dunia Fantasy</h1>
+            <div class="image-container">
+                <video width="401" autoplay muted loop>
+                    <source src="eldenring-kf-03-animated-new.webm" type="video/webm">
+                </video>
+            </div>
+                     
+            <p>
+                *Elden Ring* adalah game aksi RPG yang dikembangkan oleh FromSoftware dan diterbitkan oleh Bandai Namco Entertainment. Dirilis pada Februari 2022, game ini dengan cepat mendapatkan popularitas berkat kombinasi dunia terbuka yang luas dan sistem pertarungan khas FromSoftware yang menantang.
+            </p>
+            <p>
+                Game ini menawarkan pengalaman bermain yang mendalam di dunia fantasi yang disebut *The Lands Between*. Pemain berperan sebagai Tarnished, seorang pahlawan yang ditugaskan untuk mengembalikan *Elden Ring* dan menjadi *Elden Lord*.
+            </p>
+            <p>
+                Dunia dalam *Elden Ring* dirancang oleh Hidetaka Miyazaki dan George R.R. Martin, menciptakan dunia yang kaya akan lore, karakter unik, dan musuh mengerikan. Pemain dapat menjelajahi berbagai wilayah, mulai dari hutan yang lebat hingga kastil yang megah, sambil melawan bos-bos kuat yang dikenal sebagai *Demigods*.
+            </p>
+        </article>
+    
+        <aside id="aside">
+            <img src="profile.jpg" alt="Foto Saya" class="profile-photo" width="200" height="200" style="border-radius: 50%; object-fit: cover;">
+            <p><b>Willy Gurning</b></p>
+            <p>Web Developer</p>
+        </aside>
+        <div class="about-section" id="about">
+            <h2>About Me</h2>
+            <p>
+                Hai, nama saya <span class="highlight-name">Willy Gurning</span>. Saya seorang pengembang web yang bersemangat dengan pengalaman dalam HTML, CSS, dan JavaScript. Saya suka membuat situs web yang menarik secara visual dan fungsional.
+            </p>            
+        </div>
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>Stay connected with me through social media:</p>
+            <ul class="social-links">
+                <li>
+                    <a href="https://wa.me/+6281270198297" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/_willygurning/" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100082239677129" target="_blank">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                </li>
+            </ul>
+        </section>        
+    </main>
+    <footer>
+        <p>&copy; Copyright 2024. Willy Gurning</p>
+        <button id="scrollToTopBtn" class="scroll-to-top">
+            <i class="fas fa-angle-up"></i>
+        </button>
+    </footer>
+</body>
+<script>
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= 500) {
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+});
+</script>
+</html>
