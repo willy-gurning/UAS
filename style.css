@@ -28,7 +28,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #1e2330;
+    background-color: black;/*1e2330*/
     z-index: 1000;
 }
 
@@ -240,6 +240,7 @@ footer {
     color: white;
 }
 
+/* style tombol kembali ke awal */
 #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
@@ -256,10 +257,12 @@ footer {
     transition: background-color 0.3s;
 }
 
+/* style jika ada kursor di atas tombol */
 #scrollToTopBtn:hover {
     background-color: #00cc00;
 }
 
+/* animasi responsif scroll ke tampilan sesuai link bar navigasi */
 @media (max-width: 768px) {
     main {
         flex-direction: column;
